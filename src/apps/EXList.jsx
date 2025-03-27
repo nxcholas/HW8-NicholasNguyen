@@ -1,11 +1,17 @@
 import React, {useState} from "react";
 import EX1 from '../apps/EX1'
+import EX2 from "../apps/EX2";
+import EX3 from '../apps/EX3';
+import EX4 from '../apps/EX4';
 import '../css/EXList.css';
 
 function List () {
   // store apps in array
   const apps = [
     {name: "EX1", component: <EX1></EX1>},
+    {name: "EX2", component: <EX2></EX2>},
+    {name: "EX3", component: <EX3></EX3>},
+    {name: "EX4", component: <EX4></EX4>}
   ]
   // tracking active app
   const [currentApp, setCurrentApp] = useState(0);
